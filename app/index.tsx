@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet } from "react-native";
+import {View, StyleSheet, Text} from 'react-native';
 
 const usuarios = [
   {
@@ -21,7 +21,7 @@ const usuarios = [
     {
       usuarios.map( item => (
 
-        <Text style={style.textoLista}>(item.nome)</Text>
+        <Text style={style.textoLista}>{item.nome}</Text>
       ))
     }
      </View>
@@ -36,9 +36,9 @@ const style = StyleSheet.create({
   },
 
   itemLista: {
-    width: '1001',
+    width: 100,
     padding: 10,
-  }
+  },
   
   textoLista: {
     fontSize: 20
